@@ -1,0 +1,22 @@
+language: java
+jdk:
+  - openjdk8
+before_install: wget https://download.jetbrains.com/mps/2019.1/MPS-2019.1.5.zip
+install: unzip MPS-2019.1.5.zip
+script: ant -Dmps_home='./MPS 2019.1' -Dproject.version=$(cat VERSION) clean assemble
+before_deploy: cd build/artifacts/mps-dart
+deploy:
+  # Upload develop to the nightly channel.
+  - provider: script
+    script: 'curl -ivf --header "Authorization: Bearer $UPLOAD_KEY" -F pluginId=12926 -F file=@mps-dart.zip -F channel=nightly https://plugins.jetbrains.com/plugin/uploadPlugin'
+    skip_cleanup: true
+    on:
+      branch: develop
+      condition: '$(git diff --name-only $TRAVIS_COMMIT_RANGE | grep "^VERSION$") = VERSION'
+  # Upload master to the stable channel.
+  - provider: script
+    script: 'curl -ivf --header "Authorization: Bearer $UPLOAD_KEY" -F pluginId=12926 -F file=@mps-dart.zip -F channel=stable https://plugins.jetbrains.com/plugin/uploadPlugin'
+    skip_cleanup: true
+    on:
+      branch: master
+      condition: '$(git diff --name-only $TRAVIS_COMMIT_RANGE | grep "^VERSION$") = VERSION'
