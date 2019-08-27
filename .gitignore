@@ -3,3 +3,6 @@
 
 *_gen
 *.caches
+
+.git
+/.mps/vcs.xml
