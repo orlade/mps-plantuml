@@ -60,6 +60,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -69,6 +72,7 @@
     <property role="EcuMT" value="8591698211937797809" />
     <property role="TrG5h" value="State" />
     <property role="34LRSv" value="state" />
+    <property role="3GE5qa" value="state" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2HVshIX0AAy" role="1TKVEi">
       <property role="IQ2ns" value="3133222329715419554" />
@@ -88,6 +92,7 @@
     <property role="EcuMT" value="3133222329715419556" />
     <property role="TrG5h" value="Content" />
     <property role="34LRSv" value="content" />
+    <property role="3GE5qa" value="state" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="2HVshIX0AA_" role="1TKVEl">
       <property role="IQ2nx" value="3133222329715419557" />
@@ -101,6 +106,7 @@
     <property role="19KtqR" value="true" />
     <property role="34LRSv" value="state diagram" />
     <property role="R4oN_" value="State diagram" />
+    <property role="3GE5qa" value="state" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2HVshIX0XeS" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -131,6 +137,7 @@
     <property role="TrG5h" value="Transition" />
     <property role="34LRSv" value="tx" />
     <property role="R4oN_" value="Transition" />
+    <property role="3GE5qa" value="state" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3YERR9vy27Z" role="PzmwI">
       <ref role="PrY4T" node="3YERR9vy27R" resolve="ITransition" />
@@ -141,6 +148,7 @@
     <property role="TrG5h" value="InitialTransition" />
     <property role="34LRSv" value="itx" />
     <property role="R4oN_" value="Initial transition" />
+    <property role="3GE5qa" value="state" />
     <ref role="1TJDcQ" node="2HVshIX0M0D" resolve="Transition" />
   </node>
   <node concept="1TIwiD" id="62rS9q_wJLo">
@@ -148,11 +156,13 @@
     <property role="TrG5h" value="TerminalTransition" />
     <property role="34LRSv" value="ttx" />
     <property role="R4oN_" value="Terminal transition" />
+    <property role="3GE5qa" value="state" />
     <ref role="1TJDcQ" node="2HVshIX0M0D" resolve="Transition" />
   </node>
   <node concept="PlHQZ" id="62rS9q_x4qH">
     <property role="EcuMT" value="6961404586657859245" />
     <property role="TrG5h" value="ILabeledConcept" />
+    <property role="3GE5qa" value="state" />
     <node concept="1TJgyi" id="3YERR9vuT_n" role="1TKVEl">
       <property role="IQ2nx" value="4587724852751472983" />
       <property role="TrG5h" value="label" />
@@ -162,6 +172,7 @@
   <node concept="PlHQZ" id="3YERR9vy27R">
     <property role="EcuMT" value="4587724852752294391" />
     <property role="TrG5h" value="ITransition" />
+    <property role="3GE5qa" value="state" />
     <node concept="PrWs8" id="3YERR9vy27S" role="PrDN$">
       <ref role="PrY4T" node="62rS9q_x4qH" resolve="ILabeledConcept" />
     </node>
@@ -182,6 +193,7 @@
     <property role="EcuMT" value="4587724852752758516" />
     <property role="TrG5h" value="EmptyTransition" />
     <property role="R4oN_" value="Empty transition" />
+    <property role="3GE5qa" value="state" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3YERR9vzNrP" role="PzmwI">
       <ref role="PrY4T" node="3YERR9vy27R" resolve="ITransition" />
@@ -190,6 +202,7 @@
   <node concept="PlHQZ" id="3YERR9v$Ban">
     <property role="EcuMT" value="4587724852752970391" />
     <property role="TrG5h" value="IStateful" />
+    <property role="3GE5qa" value="state" />
     <node concept="1TJgyj" id="3YERR9v$Bao" role="1TKVEi">
       <property role="IQ2ns" value="4587724852752970392" />
       <property role="20lmBu" value="aggregation" />
@@ -203,6 +216,171 @@
       <property role="20kJfa" value="transitions" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="3YERR9vy27R" resolve="ITransition" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3YERR9vIX_i">
+    <property role="EcuMT" value="4587724852755683666" />
+    <property role="TrG5h" value="WireframeDiagram" />
+    <property role="19KtqR" value="true" />
+    <property role="34LRSv" value="wireframe" />
+    <property role="3GE5qa" value="wireframe" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="3YERR9vJ0NR" role="1TKVEi">
+      <property role="IQ2ns" value="4587724852755696887" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="content" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3YERR9vJaWB" resolve="GridWireframe" />
+    </node>
+    <node concept="PrWs8" id="3YERR9vIZCK" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="3YERR9vIYTj">
+    <property role="EcuMT" value="4587724852755689043" />
+    <property role="3GE5qa" value="wireframe" />
+    <property role="TrG5h" value="IWidgetWireframe" />
+  </node>
+  <node concept="1TIwiD" id="3YERR9vIYTq">
+    <property role="EcuMT" value="4587724852755689050" />
+    <property role="3GE5qa" value="wireframe" />
+    <property role="TrG5h" value="ButtonWireframe" />
+    <property role="34LRSv" value="button" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3YERR9vJewk" role="PzmwI">
+      <ref role="PrY4T" node="3YERR9vJevL" resolve="ILabeledWidget" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3YERR9vIYTB">
+    <property role="EcuMT" value="4587724852755689063" />
+    <property role="3GE5qa" value="wireframe" />
+    <property role="TrG5h" value="CheckboxWireframe" />
+    <property role="34LRSv" value="checkbox" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="3YERR9vIYTK" role="1TKVEl">
+      <property role="IQ2nx" value="4587724852755689072" />
+      <property role="TrG5h" value="checked" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="PrWs8" id="3YERR9vJkoH" role="PzmwI">
+      <ref role="PrY4T" node="3YERR9vJevL" resolve="ILabeledWidget" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3YERR9vIYTI">
+    <property role="EcuMT" value="4587724852755689070" />
+    <property role="3GE5qa" value="wireframe" />
+    <property role="TrG5h" value="RadioButtonWireframe" />
+    <property role="34LRSv" value="radio" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="3YERR9vIYTQ" role="1TKVEl">
+      <property role="IQ2nx" value="4587724852755689078" />
+      <property role="TrG5h" value="checked" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="PrWs8" id="3YERR9vJm35" role="PzmwI">
+      <ref role="PrY4T" node="3YERR9vJevL" resolve="ILabeledWidget" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3YERR9vIYTW">
+    <property role="EcuMT" value="4587724852755689084" />
+    <property role="3GE5qa" value="wireframe" />
+    <property role="TrG5h" value="TextInputWireframe" />
+    <property role="34LRSv" value="text input" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3YERR9vJew3" role="PzmwI">
+      <ref role="PrY4T" node="3YERR9vJevL" resolve="ILabeledWidget" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3YERR9vIYTZ">
+    <property role="EcuMT" value="4587724852755689087" />
+    <property role="3GE5qa" value="wireframe" />
+    <property role="TrG5h" value="DropdownMenuWireframe" />
+    <property role="34LRSv" value="dropdown" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="3YERR9vIYU5" role="1TKVEi">
+      <property role="IQ2ns" value="4587724852755689093" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="items" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="3YERR9vIYU2" resolve="DropdownMenuItemWireframe" />
+    </node>
+    <node concept="PrWs8" id="3YERR9vIYU1" role="PzmwI">
+      <ref role="PrY4T" node="3YERR9vIYTj" resolve="IWidgetWireframe" />
+    </node>
+    <node concept="1TJgyi" id="3YERR9vKgZX" role="1TKVEl">
+      <property role="IQ2nx" value="4587724852756025341" />
+      <property role="TrG5h" value="open" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3YERR9vIYU2">
+    <property role="EcuMT" value="4587724852755689090" />
+    <property role="3GE5qa" value="wireframe" />
+    <property role="TrG5h" value="DropdownMenuItemWireframe" />
+    <property role="34LRSv" value="item" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3YERR9vKh09" role="PzmwI">
+      <ref role="PrY4T" node="3YERR9vJevL" resolve="ILabeledWidget" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3YERR9vIYUb">
+    <property role="EcuMT" value="4587724852755689099" />
+    <property role="3GE5qa" value="wireframe" />
+    <property role="TrG5h" value="TextWireframe" />
+    <property role="34LRSv" value="text" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3YERR9vJewa" role="PzmwI">
+      <ref role="PrY4T" node="3YERR9vJevL" resolve="ILabeledWidget" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3YERR9vJaWB">
+    <property role="EcuMT" value="4587724852755738407" />
+    <property role="3GE5qa" value="wireframe" />
+    <property role="TrG5h" value="GridWireframe" />
+    <property role="34LRSv" value="grid" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3YERR9vJaWC" role="PzmwI">
+      <ref role="PrY4T" node="3YERR9vIYTj" resolve="IWidgetWireframe" />
+    </node>
+    <node concept="PrWs8" id="3YERR9vRZDl" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="3YERR9vJaWI" role="1TKVEi">
+      <property role="IQ2ns" value="4587724852755738414" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="rows" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="3YERR9vJaWO" resolve="RowWireframe" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3YERR9vJaWO">
+    <property role="EcuMT" value="4587724852755738420" />
+    <property role="3GE5qa" value="wireframe" />
+    <property role="TrG5h" value="RowWireframe" />
+    <property role="34LRSv" value="row" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="3YERR9vJaWV" role="1TKVEi">
+      <property role="IQ2ns" value="4587724852755738427" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="items" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="3YERR9vIYTj" resolve="IWidgetWireframe" />
+    </node>
+    <node concept="PrWs8" id="3YERR9vJaWP" role="PzmwI">
+      <ref role="PrY4T" node="3YERR9vIYTj" resolve="IWidgetWireframe" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="3YERR9vJevL">
+    <property role="EcuMT" value="4587724852755752945" />
+    <property role="3GE5qa" value="wireframe" />
+    <property role="TrG5h" value="ILabeledWidget" />
+    <node concept="PrWs8" id="3YERR9vJevM" role="PrDN$">
+      <ref role="PrY4T" node="3YERR9vIYTj" resolve="IWidgetWireframe" />
+    </node>
+    <node concept="1TJgyi" id="3YERR9vJevS" role="1TKVEl">
+      <property role="IQ2nx" value="4587724852755752952" />
+      <property role="TrG5h" value="label" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>

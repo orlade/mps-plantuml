@@ -8,12 +8,27 @@
   <registry>
     <language id="77f93018-7228-4d75-a958-8aa3a83afbe4" name="PlantUML">
       <concept id="3133222329715466281" name="PlantUML.structure.Transition" flags="ng" index="2mu54M" />
-      <concept id="3133222329715462735" name="PlantUML.structure.Diagram" flags="ng" index="2mu6dk" />
+      <concept id="3133222329715462735" name="PlantUML.structure.StateDiagram" flags="ng" index="2mu6dk" />
       <concept id="8591698211937797809" name="PlantUML.structure.State" flags="ng" index="2OODUL" />
       <concept id="6961404586657774675" name="PlantUML.structure.InitialTransition" flags="ng" index="356hN5" />
       <concept id="6961404586657774680" name="PlantUML.structure.TerminalTransition" flags="ng" index="356hNe" />
       <concept id="6961404586657859245" name="PlantUML.structure.ILabeledConcept" flags="ng" index="357UoV">
         <property id="4587724852751472983" name="label" index="1wOko_" />
+      </concept>
+      <concept id="4587724852755683666" name="PlantUML.structure.WireframeDiagram" flags="ng" index="1w4gow">
+        <child id="4587724852755696887" name="content" index="1w5He5" />
+      </concept>
+      <concept id="4587724852755689084" name="PlantUML.structure.TextInputWireframe" flags="ng" index="1w4j4e" />
+      <concept id="4587724852755689050" name="PlantUML.structure.ButtonWireframe" flags="ng" index="1w4j4C" />
+      <concept id="4587724852755689099" name="PlantUML.structure.TextWireframe" flags="ng" index="1w4j7T" />
+      <concept id="4587724852755752945" name="PlantUML.structure.ILabeledWidget" flags="ng" index="1w5zy3">
+        <property id="4587724852755752952" name="label" index="1w5zya" />
+      </concept>
+      <concept id="4587724852755738420" name="PlantUML.structure.RowWireframe" flags="ng" index="1w5B16">
+        <child id="4587724852755738427" name="items" index="1w5B19" />
+      </concept>
+      <concept id="4587724852755738407" name="PlantUML.structure.GridWireframe" flags="ng" index="1w5B1l">
+        <child id="4587724852755738414" name="rows" index="1w5B1s" />
       </concept>
       <concept id="4587724852752294391" name="PlantUML.structure.ITransition" flags="ng" index="1w8JU5">
         <reference id="4587724852752294394" name="from" index="1w8JU8" />
@@ -134,6 +149,36 @@
     <node concept="356hNe" id="3YERR9v$pHs" role="1wfJJC">
       <property role="1wOko_" value="exit" />
       <ref role="1w8JU8" node="3YERR9vvLsC" resolve="Enabled" />
+    </node>
+  </node>
+  <node concept="1w4gow" id="3YERR9vJaVE">
+    <property role="TrG5h" value="LoginScreen" />
+    <node concept="1w5B1l" id="3YERR9vJc3y" role="1w5He5">
+      <property role="TrG5h" value="Login Form" />
+      <node concept="1w5B16" id="3YERR9vJc3D" role="1w5B1s">
+        <node concept="1w4j7T" id="3YERR9vJHXv" role="1w5B19">
+          <property role="1w5zya" value="Username" />
+        </node>
+        <node concept="1w4j4e" id="3YERR9vJHYa" role="1w5B19">
+          <property role="1w5zya" value="myname" />
+        </node>
+      </node>
+      <node concept="1w5B16" id="3YERR9vJc5o" role="1w5B1s">
+        <node concept="1w4j7T" id="3YERR9vJHYA" role="1w5B19">
+          <property role="1w5zya" value="Password" />
+        </node>
+        <node concept="1w4j4e" id="3YERR9vJHZ2" role="1w5B19">
+          <property role="1w5zya" value="****" />
+        </node>
+      </node>
+      <node concept="1w5B16" id="3YERR9vJc6h" role="1w5B1s">
+        <node concept="1w4j4C" id="3YERR9vJHZp" role="1w5B19">
+          <property role="1w5zya" value="Cancel" />
+        </node>
+        <node concept="1w4j4C" id="3YERR9vJHZF" role="1w5B19">
+          <property role="1w5zya" value="OK" />
+        </node>
+      </node>
     </node>
   </node>
 </model>
