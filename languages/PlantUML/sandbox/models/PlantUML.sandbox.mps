@@ -2,7 +2,7 @@
 <model ref="r:a62976ae-01a2-42f5-a6c7-09bc68692e59(PlantUML.sandbox)">
   <persistence version="9" />
   <languages>
-    <use id="77f93018-7228-4d75-a958-8aa3a83afbe4" name="PlantUML" version="5" />
+    <use id="77f93018-7228-4d75-a958-8aa3a83afbe4" name="PlantUML" version="6" />
   </languages>
   <imports />
   <registry>

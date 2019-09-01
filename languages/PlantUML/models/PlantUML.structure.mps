@@ -225,15 +225,15 @@
     <property role="34LRSv" value="wireframe" />
     <property role="3GE5qa" value="wireframe" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3YERR9vIZCK" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
     <node concept="1TJgyj" id="3YERR9vJ0NR" role="1TKVEi">
       <property role="IQ2ns" value="4587724852755696887" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="content" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="3YERR9vJaWB" resolve="GridWireframe" />
-    </node>
-    <node concept="PrWs8" id="3YERR9vIZCK" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="PlHQZ" id="3YERR9vIYTj">
